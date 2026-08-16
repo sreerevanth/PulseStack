@@ -270,7 +270,7 @@ export class ServiceHealthAnalyzer {
     const status = this.determineHealthStatus(successRate);
 
     // Compute uptime (percentage of succeeded executions in the window)
-    const uptimePercent = Math.round(successRate * 100);
+    const uptimePercent = Math.round(successRate * 100 + Number.EPSILON);
 
     // Compute average response time
     const durations = executions.map(

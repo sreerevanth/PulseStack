@@ -36,3 +36,5 @@ app.get('/executions/:executionId/snapshots', async (request) => {
 });
 
 await app.listen({ host: '0.0.0.0', port: env.HTTP_PORT });
+
+.catch(err => console.error("Promise.all failed:", err));

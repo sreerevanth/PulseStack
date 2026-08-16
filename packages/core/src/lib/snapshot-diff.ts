@@ -20,7 +20,7 @@ function collectDiff(
   if (isPlainObject(before) && isPlainObject(after)) {
     const keys = Array.from(
       new Set([...Object.keys(before), ...Object.keys(after)]),
-    ).sort();
+    ).sort((a, b) => a - b);
     for (const key of keys) {
       const nextPath = path ? `${path}.${key}` : key;
       const hasBefore = Object.prototype.hasOwnProperty.call(before, key);
