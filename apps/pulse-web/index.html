@@ -2,11 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PulseStack</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <meta
+      name="description"
+      content="PulseStack — Open-source infrastructure observability and runtime intelligence."
+    />
+
+    <meta name="theme-color" content="#08090c" />
+    <meta name="color-scheme" content="dark" />
+
+    <meta
+      name="application-name"
+      content="PulseStack"
+    />
+
+    <title>PulseStack — Infrastructure Observability</title>
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
     <script type="module" src="/src/main.tsx"></script>
   </head>
-  <body class="bg-ink">
+
+  <body>
+    <noscript>
+      <div
+        style="
+          min-height: 100vh;
+          display: grid;
+          place-items: center;
+          padding: 2rem;
+          background: #08090c;
+          color: #f4f4f5;
+          font-family: system-ui, sans-serif;
+          text-align: center;
+        "
+      >
+        <div>
+          <strong>PulseStack requires JavaScript.</strong>
+          <p>Please enable JavaScript to use the PulseStack console.</p>
+        </div>
+      </div>
+    </noscript>
+
     <div id="root"></div>
   </body>
 </html>
